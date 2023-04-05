@@ -55,9 +55,9 @@ jobs:
           set -e -o pipefail
           ./cruelbuild config                    \
                        model=${{ matrix.model }} \
-                       name="Cruel-devel"        \
+                       name=name="Cruel-v5.3"    \
                        toolchain=$TOOLCHAIN      \
-                       +magisk                   \
+                       +magisk=v26.0             \
                        +nohardening              \
                        +ttl                      \
                        +wireguard                \
